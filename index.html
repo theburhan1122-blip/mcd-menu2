@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Menu Prices 2026 – Full Guide</title>
+    <meta name="description" content="Complete guide to McDonald's Menu Prices for 2026. Includes Big Mac, Breakfast, McCafé, and Dollar Menu prices and calories.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mc-red: #DA291C;
+            --mc-yellow: #FFC72C;
+            --mc-dark: #27251F;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .text-mc-red { color: var(--mc-red); }
+        .bg-mc-red { background-color: var(--mc-red); }
+        .bg-mc-yellow { background-color: var(--mc-yellow); }
+        
+        /* Table Styling */
+        .menu-table-container {
+            overflow-x: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            background: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Ensures table doesn't squash on mobile */
+        }
+        
+        th {
+            background-color: var(--mc-yellow);
+            color: var(--mc-dark);
+            font-weight: 700;
+            padding: 1rem;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+        
+        tr:hover {
+            background-color: #fff9e6;
+        }
+
+        /* Navigation */
+        .nav-link {
+            position: relative;
+            font-weight: 600;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--mc-yellow);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Card Styling */
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Accordion */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header / Nav -->
+    <nav class="bg-mc-red text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo Area -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fas fa-hamburger text-mc-yellow text-3xl"></i>
+                    <span class="brand-font text-2xl font-bold tracking-wide">MenuGuide<span class="text-mc-yellow">2026</span></span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-6 text-sm">
+                    <a href="#featured" class="nav-link hover:text-mc-yellow transition">Favorites</a>
+                    <a href="#breakfast" class="nav-link hover:text-mc-yellow transition">Breakfast</a>
+                    <a href="#burgers" class="nav-link hover:text-mc-yellow transition">Burgers</a>
+                    <a href="#mccafe" class="nav-link hover:text-mc-yellow transition">McCafé</a>
+                    <a href="#faq" class="nav-link hover:text-mc-yellow transition">FAQ</a>
+                </div>
+
+                <!-- Mobile Menu Button (Simple implementation) -->
+                <div class="md:hidden">
+                    <a href="#featured" class="text-white hover:text-mc-yellow"><i class="fas fa-bars text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b-4 border-mc-yellow">
+        <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+            <span class="inline-block bg-mc-yellow text-mc-dark text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider shadow-sm">Updated for 2026</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-mc-dark mb-6 leading-tight">
+                McDonald's Menu Prices 2026 <br><span class="text-mc-red">Full Guide</span>
+            </h1>
+            <div class="prose max-w-none text-gray-600 text-lg leading-relaxed">
+                <p class="mb-4">
+                    Craving your favorite McDonald's meal but unsure about the current prices? You're not alone. With prices changing frequently, it's frustrating to plan your order without knowing what you'll actually pay at the counter.
+                </p>
+                <p>
+                    That's exactly why I've put together this complete guide to <strong>McDonald's Menu Prices</strong> for 2026. Whether you want a Big Mac, a quick breakfast, or just some crispy fries, you'll find every item with its price and calories listed here. No more surprises at checkout!
+                </p>
+            </div>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#value-menu" class="bg-mc-red text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-red-700 transition">View Value Menu</a>
+                <a href="#burgers" class="bg-mc-dark text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-gray-800 transition">View Burgers</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+
+        <!-- Featured Favorites -->
+        <section id="featured" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-yellow p-2 rounded-full"><i class="fas fa-star text-mc-dark"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Featured Favorites</h2>
+            </div>
+            <p class="text-gray-600 mb-6">McDonald's Featured Favorites bring together the most loved items from the menu. These include timeless classics and newer fan picks that keep customers coming back again and again.</p>
+            
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Menu Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Big Mac®</td><td>$6.72</td><td>590</td></tr>
+                        <tr><td>Quarter Pounder® with Cheese</td><td>$5.99</td><td>520</td></tr>
+                        <tr><td>Chicken McNuggets®</td><td>$8.39</td><td>590</td></tr>
+                        <tr><td>Spicy McCrispy™</td><td>$4.69</td><td>530</td></tr>
+                        <tr><td>Egg McMuffin®</td><td>$4.29</td><td>310</td></tr>
+                        <tr><td>Iced Coffee (Small)</td><td>$3.89</td><td>150</td></tr>
+                        <tr><td>Iced Coffee (Medium)</td><td>$4.19</td><td>190</td></tr>
+                        <tr><td>Iced Coffee (Large)</td><td>$5.19</td><td>270</td></tr>
+                        <tr><td>Sausage Burrito</td><td>$2.99</td><td>310</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Extra Value Meals -->
+        <section id="meals" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-red p-2 rounded-full"><i class="fas fa-utensils text-white"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Extra Value Meals</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Looking to get more for your money? The Extra Value Meals bundle your favorite main items with fries and a drink. It's a smart way to save compared to ordering everything separately.</p>
+
+            <h3 class="text-xl font-bold text-mc-red mb-4 mt-8 brand-font">Breakfast Meals</h3>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Egg McMuffin® Meal</td><td>$8.19</td><td>455 Cal</td></tr>
+                        <tr><td>Sausage McMuffin® with Egg Meal</td><td>$8.99</td><td>625 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese Biscuit Meal</td><td>$7.59</td><td>605 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese McGriddles® Meal</td><td>$9.29</td><td>575 Cal</td></tr>
+                        <tr><td>Sausage, Egg & Cheese McGriddles® Meal</td><td>$11.29</td><td>695 Cal</td></tr>
+                        <tr><td>Sausage Biscuit with Egg Meal</td><td>$11.29</td><td>675 Cal</td></tr>
+                        <tr><td>Sausage Burrito Meal</td><td>$11.09</td><td>765 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese Bagel Meal</td><td>$9.99</td><td>605 Cal</td></tr>
+                        <tr><td>Steak, Egg & Cheese Bagel Meal</td><td>$10.99</td><td>825 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-bold text-mc-red mb-4 mt-8 brand-font">Lunch & Dinner Meals</h3>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Big Mac® Meal</td><td>$9.29</td><td>1170 Cal</td></tr>
+                        <tr><td>Quarter Pounder®* with Cheese Meal</td><td>$11.29</td><td>1110 Cal</td></tr>
+                        <tr><td>10 Piece Chicken McNuggets® Meal</td><td>$11.00</td><td>1000 Cal</td></tr>
+                        <tr><td>Bacon Quarter Pounder®* with Cheese Meal</td><td>$8.99</td><td>1220 Cal</td></tr>
+                        <tr><td>Double Quarter Pounder®* with Cheese Meal</td><td>$12.49</td><td>1330 Cal</td></tr>
+                        <tr><td>Cheeseburger Meal</td><td>$11.99</td><td>1190 Cal</td></tr>
+                        <tr><td>Quarter Pounder®* with Cheese Deluxe Meal</td><td>$13.99</td><td>1220 Cal</td></tr>
+                        <tr><td>McCrispy® Meal</td><td>$12.59</td><td>1040 Cal</td></tr>
+                        <tr><td>Spicy McCrispy® Meal</td><td>$11.89</td><td>1100 Cal</td></tr>
+                        <tr><td>Deluxe McCrispy® Meal</td><td>$9.89</td><td>1100 Cal</td></tr>
+                        <tr><td>Spicy Deluxe McCrispy® Meal</td><td>$10.29</td><td>1100 Cal</td></tr>
+                        <tr><td>McCrispy® Strips Meal (3-Piece)</td><td>$7.89</td><td>—</td></tr>
+                        <tr><td>McCrispy® Strips Meal (4-Piece)</td><td>$8.79</td><td>—</td></tr>
+                        <tr><td>Filet-O-Fish® Meal</td><td>$12.59</td><td>950 Cal</td></tr>
+                        <tr><td>Ranch Snack Wrap® Meal</td><td>$12.00</td><td>1350 Cal</td></tr>
+                        <tr><td>Spicy Snack Wrap® Meal</td><td>$11.29</td><td>1330 Cal</td></tr>
+                        <tr><td>Ranch & Spicy Snack Wrap® Meal</td><td>$10.19</td><td>1340 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- McValue Menu -->
+        <section id="value-menu" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-yellow p-2 rounded-full"><i class="fas fa-dollar-sign text-mc-dark"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">McValue Menu</h2>
+            </div>
+            <p class="text-gray-600 mb-6">The McValue menu is perfect when you want something tasty without spending too much. With meal deals starting at just $5 and the "Buy One, Add One for $1" offer, it's the best budget-friendly option on the <strong><a href="https://mcdonalds-menu-prices.us/">mcd menu</a></strong>.</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold text-mc-red mb-3 brand-font">Meal Deals (Starting at $5)</h3>
+                    <div class="menu-table-container">
+                        <table>
+                            <thead><tr><th>Item</th><th>Price</th></tr></thead>
+                            <tbody>
+                                <tr><td>The McChicken® Meal Deal</td><td>$5*</td></tr>
+                                <tr><td>The McDouble® Meal Deal</td><td>$5*</td></tr>
+                                <tr><td>The Daily Double Meal Deal</td><td>$5*</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-mc-red mb-3 brand-font">Buy One, Add One for $1 (Breakfast)</h3>
+                    <div class="menu-table-container">
+                        <table>
+                            <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                            <tbody>
+                                <tr><td>Hash Browns</td><td>$2.69</td><td>140 Cal</td></tr>
+                                <tr><td>Sausage Biscuit</td><td>$4.79</td><td>460 Cal</td></tr>
+                                <tr><td>Sausage McMuffin®</td><td>$4.67</td><td>400 Cal</td></tr>
+                                <tr><td>Sausage Burrito</td><td>$4.67</td><td>400 Cal</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-mc-red mb-3 mt-4 brand-font">Buy One, Add One for $1 (Lunch & Dinner)</h3>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>McChicken®</td><td>$3.10</td><td>400 Cal</td></tr>
+                        <tr><td>Double Cheeseburger</td><td>$4.19</td><td>450 Cal</td></tr>
+                        <tr><td>6 Piece Chicken McNuggets®</td><td>$5.79</td><td>250 Cal</td></tr>
+                        <tr><td>Small World Famous Fries®</td><td>$2.49</td><td>230 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Breakfast Menu -->
+        <section id="breakfast" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-red p-2 rounded-full"><i class="fas fa-coffee text-white"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Breakfast Menu</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Start your morning right with McDonald's <a href="https://mcdonalds-breakfast-menu.us/">breakfast</a> favorites. From fluffy McGriddles to hearty bagel sandwiches, there's something for everyone.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Sausage Biscuit</td><td>$2.49</td><td>460 Cal</td></tr>
+                        <tr><td>Hash Browns</td><td>$2.69</td><td>140 Cal</td></tr>
+                        <tr><td>Egg and Cheese Bagel</td><td>$3.29</td><td>520 Cal</td></tr>
+                        <tr><td>Bagel (Plain)</td><td>$3.59</td><td>270 Cal</td></tr>
+                        <tr><td>Sausage Burrito</td><td>$4.19</td><td>310 Cal</td></tr>
+                        <tr><td>Sausage Biscuit with Egg</td><td>$5.59</td><td>530 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese Bagel</td><td>$5.59</td><td>590 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese McGriddles®</td><td>$5.72</td><td>430 Cal</td></tr>
+                        <tr><td>Sausage McGriddles®</td><td>$5.72</td><td>430 Cal</td></tr>
+                        <tr><td>Hotcakes</td><td>$5.69</td><td>580 Cal</td></tr>
+                        <tr><td>Hotcakes and Sausage</td><td>$5.89</td><td>770 Cal</td></tr>
+                        <tr><td>Bacon, Egg & Cheese Biscuit</td><td>$5.89</td><td>460 Cal</td></tr>
+                        <tr><td>Sausage, Egg & Cheese Bagel</td><td>$5.99</td><td>710 Cal</td></tr>
+                        <tr><td>Sausage McMuffin®</td><td>$6.59</td><td>400 Cal</td></tr>
+                        <tr><td>Sausage McMuffin® with Egg</td><td>$6.59</td><td>480 Cal</td></tr>
+                        <tr><td>Steak, Egg & Cheese Bagel</td><td>$6.79</td><td>680 Cal</td></tr>
+                        <tr><td>Egg McMuffin®</td><td>$7.29</td><td>310 Cal</td></tr>
+                        <tr><td>Big Breakfast®</td><td>$7.59</td><td>760 Cal</td></tr>
+                        <tr><td>Sausage, Egg & Cheese McGriddles®</td><td>$7.78</td><td>550 Cal</td></tr>
+                        <tr><td>Big Breakfast® with Hotcakes</td><td>$8.29</td><td>1340 Cal</td></tr>
+                        <tr><td>Fruit & Maple Oatmeal</td><td>$1.99</td><td>320 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Burgers Menu -->
+        <section id="burgers" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-yellow p-2 rounded-full"><i class="fas fa-burger text-mc-dark"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Burgers Menu</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Nothing beats a juicy McDonald's burger. Whether you're in the mood for a simple cheeseburger or want to know the <strong>McDonald's Big Mac prices</strong>, this section has you covered.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Hamburger</td><td>$3.99</td><td>251 Cal</td></tr>
+                        <tr><td>Cheeseburger</td><td>$3.89</td><td>300 Cal</td></tr>
+                        <tr><td>Daily Double</td><td>$4.39</td><td>490 Cal</td></tr>
+                        <tr><td>McDouble®</td><td>$4.59</td><td>390 Cal</td></tr>
+                        <tr><td>Double Cheeseburger</td><td>$6.19</td><td>440 Cal</td></tr>
+                        <tr><td>Quarter Pounder® with Cheese</td><td>$6.39</td><td>520 Cal</td></tr>
+                        <tr><td>Double Quarter Pounder® with Cheese</td><td>$6.99</td><td>740 Cal</td></tr>
+                        <tr><td>Quarter Pounder® with Cheese Deluxe</td><td>$7.49</td><td>630 Cal</td></tr>
+                        <tr><td>Big Mac®</td><td>$8.39</td><td>590 Cal</td></tr>
+                        <tr><td>Bacon Quarter Pounder® with Cheese</td><td>$8.99</td><td>630 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Chicken & Fish -->
+        <section id="chicken" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-red p-2 rounded-full"><i class="fas fa-drumstick-bite text-white"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Chicken & Fish Sandwiches</h2>
+            </div>
+            <p class="text-gray-600 mb-6">When you're craving something other than beef, these chicken and fish options deliver great flavor and value.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>McChicken®</td><td>$3.10</td><td>400 Cal</td></tr>
+                        <tr><td>Spicy McCrispy™</td><td>$4.69</td><td>531 Cal</td></tr>
+                        <tr><td>McCrispy™</td><td>$4.99</td><td>470 Cal</td></tr>
+                        <tr><td>Filet-O-Fish®</td><td>$4.99</td><td>390 Cal</td></tr>
+                        <tr><td>Spicy Deluxe McCrispy™</td><td>$5.99</td><td>530 Cal</td></tr>
+                        <tr><td>Deluxe McCrispy™</td><td>$6.59</td><td>530 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Nuggets & Strips -->
+        <section id="nuggets" class="scroll-mt-24 mb-16">
+            <h2 class="text-2xl font-bold text-mc-dark mb-4 brand-font">McNuggets & McCrispy Strips</h2>
+            <p class="text-gray-600 mb-6">Chicken McNuggets are a menu staple loved by kids and adults alike. Pick your size and don't forget the dipping sauce!</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th></tr></thead>
+                    <tbody>
+                        <tr><td>4 pc. Chicken McNuggets</td><td>$3.19</td></tr>
+                        <tr><td>6 pc. Chicken McNuggets</td><td>$4.39</td></tr>
+                        <tr><td>10 pc. Chicken McNuggets</td><td>$5.79</td></tr>
+                        <tr><td>20 pc. Chicken McNuggets</td><td>$7.00</td></tr>
+                        <tr><td>40 pc. Chicken McNuggets</td><td>$13.19</td></tr>
+                        <tr><td>40 pc. Chicken McNuggets & 2 Large Fries</td><td>$19.69</td></tr>
+                        <tr><td>McCrispy™ Strips (3 piece)</td><td>$4.99–$5.49</td></tr>
+                        <tr><td>McCrispy™ Strips (4 piece)</td><td>$5.99–$6.19</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Fries & Sides -->
+        <section id="sides" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-yellow p-2 rounded-full"><i class="fas fa-utensil-spoon text-mc-dark"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Fries, Sides & Sauces</h2>
+            </div>
+            <p class="text-gray-600 mb-6">No meal is complete without McDonald's World Famous Fries. Check out the <strong>McDonald's menu prices 2026</strong> for sides and sauces below.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Apple Slices</td><td>$1.50</td><td>15 Cal</td></tr>
+                        <tr><td>Spicy Buffalo Sauce</td><td>$0.25</td><td>30 Cal</td></tr>
+                        <tr><td>Tangy Barbeque Sauce</td><td>$0.35</td><td>45 Cal</td></tr>
+                        <tr><td>Honey</td><td>$0.40</td><td>50 Cal</td></tr>
+                        <tr><td>Sweet 'N Sour Sauce</td><td>$0.40</td><td>50 Cal</td></tr>
+                        <tr><td>Honey Mustard Sauce</td><td>$0.40</td><td>60 Cal</td></tr>
+                        <tr><td>Ketchup Packet</td><td>$0.40</td><td>10 Cal</td></tr>
+                        <tr><td>Mustard Packet</td><td>$0.40</td><td>0 Cal</td></tr>
+                        <tr><td>Mayonnaise Packet</td><td>$0.40</td><td>90 Cal</td></tr>
+                        <tr><td>Creamy Ranch Sauce</td><td>$0.40</td><td>110 Cal</td></tr>
+                        <tr><td>Small World Famous Fries®</td><td>$3.49</td><td>230 Cal</td></tr>
+                        <tr><td>Medium World Famous Fries®</td><td>$4.19</td><td>320 Cal</td></tr>
+                        <tr><td>Large World Famous Fries®</td><td>$5.39</td><td>480 Cal</td></tr>
+                        <tr><td>Creamy Chili McCrispy™ Strip Dip</td><td>$5.29–$5.99</td><td>110 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Happy Meal -->
+        <section id="happymeal" class="scroll-mt-24 mb-16">
+            <h2 class="text-2xl font-bold text-mc-red mb-4 brand-font">Happy Meal</h2>
+            <p class="text-gray-600 mb-6">Kids love Happy Meals! Each one comes with a fun toy, apple slices, a drink, and your choice of main item.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Hamburger Happy Meal®</td><td>$6.32</td><td>475 Cal</td></tr>
+                        <tr><td>4 Piece Chicken McNuggets® Happy Meal®</td><td>$6.93</td><td>395 Cal</td></tr>
+                        <tr><td>6 Piece Chicken McNuggets® Happy Meal®</td><td>$7.19</td><td>475 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sweets & Treats -->
+        <section id="sweets" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-red p-2 rounded-full"><i class="fas fa-ice-cream text-white"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Sweets & Treats</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Satisfy your sweet tooth with ice cream, shakes, cookies, and pies from the dessert menu.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th><th>Calories</th></tr></thead>
+                    <tbody>
+                        <tr><td>Vanilla Cone</td><td>$1.29–$2.43</td><td>200 Cal</td></tr>
+                        <tr><td>Chocolate Chip Cookie</td><td>$1.79</td><td>170 Cal</td></tr>
+                        <tr><td>Baked Apple Pie</td><td>$1.89</td><td>230 Cal</td></tr>
+                        <tr><td>McFlurry® with OREO® Cookies</td><td>$2.29–$2.99</td><td>410 Cal</td></tr>
+                        <tr><td>Chocolate Shake</td><td>$2.50–$5.00</td><td>520–800 Cal</td></tr>
+                        <tr><td>McFlurry® with M&M'S® Candies</td><td>$3.00–$4.50</td><td>570 Cal</td></tr>
+                        <tr><td>Hot Fudge Sundae</td><td>$3.65–$4.29</td><td>330 Cal</td></tr>
+                        <tr><td>Hot Caramel Sundae</td><td>$3.65–$4.29</td><td>331 Cal</td></tr>
+                        <tr><td>Vanilla Shake</td><td>$3.99–$4.89</td><td>480–780 Cal</td></tr>
+                        <tr><td>Strawberry Shake</td><td>$3.99–$4.89</td><td>470–850 Cal</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- McCafe -->
+        <section id="mccafe" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-yellow p-2 rounded-full"><i class="fas fa-mug-hot text-mc-dark"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">McCafé Coffees</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Need a caffeine boost? McCafé offers lattes, frappes, iced coffee, and more to power your day.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Small</th><th>Medium</th><th>Large</th></tr></thead>
+                    <tbody>
+                        <tr><td>McCafé® Iced Coffee</td><td>$1.89 (150 Cal)</td><td>$2.19 (190 Cal)</td><td>$3.19 (270 Cal)</td></tr>
+                        <tr><td>Americano</td><td>$2.39 (0 Cal)</td><td>$3.19 (5 Cal)</td><td>$4.29 (5 Cal)</td></tr>
+                        <tr><td>McCafé® Premium Roast Coffee</td><td>$2.39 (5 Cal)</td><td>$2.99 (10 Cal)</td><td>$3.49 (10 Cal)</td></tr>
+                        <tr><td>McCafé® Cappuccino</td><td>$3.19 (110 Cal)</td><td>$4.29 (160 Cal)</td><td>$5.19 (200 Cal)</td></tr>
+                        <tr><td>McCafé® Caramel Macchiato</td><td>$3.19 (260 Cal)</td><td>$4.09 (260 Cal)</td><td>$5.09 (260 Cal)</td></tr>
+                        <tr><td>McCafé® Latte</td><td>$3.19 (140 Cal)</td><td>$4.19 (190 Cal)</td><td>$5.29 (250 Cal)</td></tr>
+                        <tr><td>McCafé® Caramel Latte</td><td>$3.39 (250 Cal)</td><td>$4.09 (320 Cal)</td><td>$4.49 (390 Cal)</td></tr>
+                        <tr><td>McCafé® Caramel Cappuccino</td><td>$3.39 (210 Cal)</td><td>$4.49 (260 Cal)</td><td>$5.19 (340 Cal)</td></tr>
+                        <tr><td>McCafé® French Vanilla Cappuccino</td><td>$3.39 (210 Cal)</td><td>$4.19 (260 Cal)</td><td>$4.59 (340 Cal)</td></tr>
+                        <tr><td>McCafé® Mocha Latte</td><td>$3.59 (290 Cal)</td><td>$4.29 (370 Cal)</td><td>$4.59 (460 Cal)</td></tr>
+                        <tr><td>McCafé® Iced Latte</td><td>$3.59 (80 Cal)</td><td>$4.39 (120 Cal)</td><td>$4.99 (170 Cal)</td></tr>
+                        <tr><td>McCafé® Iced Caramel Macchiato</td><td>$3.59 (200 Cal)</td><td>$4.69 (240 Cal)</td><td>$5.19 (360 Cal)</td></tr>
+                        <tr><td>McCafé® Iced Mocha</td><td>$3.99 (270 Cal)</td><td>$4.19 (320 Cal)</td><td>$5.29 (440 Cal)</td></tr>
+                        <tr><td>McCafé® Iced Caramel Coffee</td><td>$3.89 (150 Cal)</td><td>$4.19 (200 Cal)</td><td>$5.19 (270 Cal)</td></tr>
+                        <tr><td>McCafé® Iced French Vanilla Coffee</td><td>$3.89 (150 Cal)</td><td>$4.19 (200 Cal)</td><td>$5.19 (280 Cal)</td></tr>
+                        <tr><td>Iced Caramel Latte</td><td>$3.39 (180 Cal)</td><td>$4.19 (220 Cal)</td><td>$4.59 (330 Cal)</td></tr>
+                        <tr><td>McCafé® French Vanilla Latte</td><td>$4.99 (250 Cal)</td><td>$5.19 (320 Cal)</td><td>$5.39 (400 Cal)</td></tr>
+                        <tr><td>McCafé® Iced French Vanilla Latte</td><td>$4.59 (180 Cal)</td><td>$4.79 (220 Cal)</td><td>$4.99 (330 Cal)</td></tr>
+                        <tr><td>McCafé® Caramel Frappé</td><td>$4.19 (420 Cal)</td><td>$4.49 (490 Cal)</td><td>$5.19 (650 Cal)</td></tr>
+                        <tr><td>McCafé® Mocha Frappé</td><td>$4.19 (430 Cal)</td><td>$4.49 (490 Cal)</td><td>$5.19 (660 Cal)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Beverages -->
+        <section id="drinks" class="scroll-mt-24 mb-16">
+            <h2 class="text-2xl font-bold text-mc-dark mb-4 brand-font">Beverages</h2>
+            <p class="text-gray-600 mb-6">From sodas to smoothies, McDonald's drink menu has refreshing options for every taste.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Small</th><th>Medium</th><th>Large</th></tr></thead>
+                    <tbody>
+                        <tr><td>Coca-Cola®</td><td>$1.19 (150 Cal)</td><td>$2.59 (210 Cal)</td><td>$3.19 (290 Cal)</td></tr>
+                        <tr><td>Dr Pepper®</td><td>$1.19 (140 Cal)</td><td>$2.39 (200 Cal)</td><td>$3.19 (280 Cal)</td></tr>
+                        <tr><td>Sprite®</td><td>$1.39 (140 Cal)</td><td>$2.39 (200 Cal)</td><td>$3.19 (270 Cal)</td></tr>
+                        <tr><td>Hi-C® Orange Lavaburst®</td><td>$1.49 (160 Cal)</td><td>$2.19 (230 Cal)</td><td>$3.19 (310 Cal)</td></tr>
+                        <tr><td>Hot Tea</td><td>$1.89 (10 Cal)</td><td>$2.39 (10 Cal)</td><td>$2.79 (15 Cal)</td></tr>
+                        <tr><td>Diet Coke®</td><td>$2.19 (0 Cal)</td><td>$2.59 (0 Cal)</td><td>$3.19 (0 Cal)</td></tr>
+                        <tr><td>Fanta® Orange</td><td>$2.19 (150 Cal)</td><td>$2.59 (210 Cal)</td><td>$3.19 (300 Cal)</td></tr>
+                        <tr><td>Frozen Coca-Cola® Classic</td><td>$2.29 (60 Cal)</td><td>$3.29 (80 Cal)</td><td>$4.19 (110 Cal)</td></tr>
+                        <tr><td>Frozen Fanta® Blue Raspberry</td><td>$2.99 (60 Cal)</td><td>$3.29 (80 Cal)</td><td>$4.29 (110 Cal)</td></tr>
+                        <tr><td>Hot Chocolate</td><td>$3.09 (360 Cal)</td><td>$4.50 (440 Cal)</td><td>$5.10 (540 Cal)</td></tr>
+                        <tr><td>Lemonade</td><td>$3.79 (120 Cal)</td><td>$4.69 (190 Cal)</td><td>$4.99 (270 Cal)</td></tr>
+                        <tr><td>Sweet Tea</td><td>$3.79 (120 Cal)</td><td>$4.69 (170 Cal)</td><td>$4.99 (230 Cal)</td></tr>
+                        <tr><td>Unsweetened Iced Tea</td><td>$3.79 (70 Cal)</td><td>$4.69 (100 Cal)</td><td>$4.99 (140 Cal)</td></tr>
+                        <tr><td>Minute Maid® Premium Orange Juice</td><td>$3.79 (150 Cal)</td><td>$4.79 (190 Cal)</td><td>$5.19 (270 Cal)</td></tr>
+                        <tr><td>Strawberry Banana Smoothie</td><td>$3.89 (140 Cal)</td><td>$5.19 (240 Cal)</td><td>$6.29 (330 Cal)</td></tr>
+                        <tr><td>Mango Pineapple Smoothie</td><td>$3.89 (200 Cal)</td><td>$4.19 (205 Cal)</td><td>$5.49 (340 Cal)</td></tr>
+                        <tr><td>Honest Kids® Appley Ever After® Juice</td><td>$1.89</td><td>—</td><td>—</td></tr>
+                        <tr><td>1% Low Fat Milk Jug</td><td>$1.89</td><td>—</td><td>—</td></tr>
+                        <tr><td>Reduced Sugar Low Fat Chocolate Milk</td><td>$1.89</td><td>—</td><td>—</td></tr>
+                        <tr><td>DASANI® Water</td><td>$3.78</td><td>—</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Shareables -->
+        <section id="shareables" class="scroll-mt-24 mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-mc-red p-2 rounded-full"><i class="fas fa-users text-white"></i></div>
+                <h2 class="text-3xl font-bold text-mc-dark">Shareables & Bundles</h2>
+            </div>
+            <p class="text-gray-600 mb-6">Feeding a group? These bundles make ordering for family or friends simple and affordable.</p>
+            <div class="menu-table-container">
+                <table>
+                    <thead><tr><th>Item</th><th>Price</th></tr></thead>
+                    <tbody>
+                        <tr><td>2 Large Fries</td><td>$6.29</td></tr>
+                        <tr><td>13 Cookie Tote</td><td>$12.59</td></tr>
+                        <tr><td>40 pc. Chicken McNuggets</td><td>$13.19</td></tr>
+                        <tr><td>Classic Cheeseburger Pack</td><td>$18.49</td></tr>
+                        <tr><td>40 pc. Chicken McNuggets & 2 Large Fries</td><td>$19.69</td></tr>
+                        <tr><td>Classic Big Mac Pack</td><td>$22.39</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Top 8 Must Try -->
+        <section id="must-try" class="mb-16">
+            <h2 class="text-3xl font-bold text-mc-dark mb-8 text-center border-b-4 border-mc-yellow inline-block">Top 8 McDonald's Items You Must Try</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-red">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">Big Mac®</h3>
+                    <p class="text-sm text-gray-600">The Big Mac needs no introduction. Two beef patties, special sauce, lettuce, cheese, pickles, and onions on a sesame seed bun make this an all-time favorite. It's messy, flavorful, and totally worth it.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-yellow">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">Quarter Pounder® with Cheese</h3>
+                    <p class="text-sm text-gray-600">Made with fresh beef cooked right when you order, this burger delivers juicy flavor in every bite. The melted cheese and slivered onions complete this satisfying classic.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-red">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">Chicken McNuggets®</h3>
+                    <p class="text-sm text-gray-600">Crispy on the outside, tender on the inside. These bite-sized pieces of white meat chicken pair perfectly with any dipping sauce. Great for sharing or keeping all to yourself.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-yellow">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">Egg McMuffin®</h3>
+                    <p class="text-sm text-gray-600">The breakfast sandwich that started it all. A freshly cracked egg, Canadian bacon, and American cheese on a toasted English muffin. Simple, delicious, and filling.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-red">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">Spicy McCrispy™</h3>
+                    <p class="text-sm text-gray-600">If you love heat, this one's for you. A crispy chicken fillet with a spicy pepper sauce that brings just the right kick. Perfectly crunchy and packed with flavor.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-yellow">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">McFlurry® with OREO® Cookies</h3>
+                    <p class="text-sm text-gray-600">Creamy vanilla soft serve mixed with crushed OREO cookie pieces. It's the perfect treat after any meal or as a standalone snack on a hot day.</p>
+                </div>
+                <!-- Card 7 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-red">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">World Famous Fries®</h3>
+                    <p class="text-sm text-gray-600">Golden, crispy, and lightly salted. These fries are iconic for a reason. Best enjoyed fresh and hot straight from the fryer.</p>
+                </div>
+                <!-- Card 8 -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md border-t-4 border-mc-yellow">
+                    <h3 class="text-xl font-bold text-mc-dark mb-2">McCafé® Iced Coffee</h3>
+                    <p class="text-sm text-gray-600">Smooth, refreshing, and available in different flavors. Whether you like it plain or with caramel, this drink gives you the caffeine boost you need without the heaviness of hot coffee.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faq" class="scroll-mt-24 mb-16">
+            <h2 class="text-3xl font-bold text-mc-dark mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">What time does McDonald's stop serving breakfast? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Most locations stop breakfast around 10:30 or 11:00 a.m.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Does McDonald's have all-day breakfast? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Not everywhere. Check your local restaurant for availability.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Are McDonald's fries vegetarian? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">In the U.S., they contain natural beef flavor with milk derivatives.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">What's inside a Big Mac? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Two beef patties, special sauce, lettuce, cheese, pickles, onions, and a three-part bun.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Can I customize my order? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Yes, you can add or remove items through the app or at the counter.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Are Chicken McNuggets made with real chicken? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Yes, they're made with 100% white meat chicken.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Does McDonald's offer gluten-free options? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">No certified gluten-free items are available in the U.S. due to cross-contact risks.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">What dipping sauces come with McNuggets? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Options include BBQ, Sweet 'N Sour, Honey Mustard, Ranch, and more.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Can I get free refills on drinks? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Many locations offer free refills for dine-in fountain drinks.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 group cursor-pointer">
+                    <summary class="font-bold text-lg text-mc-red flex justify-between items-center group-hover:text-red-700">Where can I find nutrition info? <span class="text-gray-400 group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span></summary>
+                    <p class="mt-2 text-gray-600">Check the McDonald's app or official website for full details.</p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-mc-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="brand-font text-xl mb-4 text-mc-yellow">MenuGuide2026</h4>
+                    <p class="text-gray-400 text-sm">Your independent guide to McDonald's menu prices, calories, and nutrition facts.</p>
+                </div>
+                <div>
+                    <h4 class="brand-font text-lg mb-4">Quick Links</h4>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li><a href="#breakfast" class="hover:text-mc-yellow">Breakfast</a></li>
+                        <li><a href="#burgers" class="hover:text-mc-yellow">Burgers</a></li>
+                        <li><a href="#mccafe" class="hover:text-mc-yellow">McCafé</a></li>
+                        <li><a href="#faq" class="hover:text-mc-yellow">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="brand-font text-lg mb-4">Disclaimer</h4>
+                    <p class="text-gray-400 text-xs italic">
+                        Prices may vary by location. Always confirm with your local McDonald's for the most accurate pricing. This website is not affiliated with McDonald's Corporation.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-xs">
+                &copy; 2026 McDonald's Menu Guide. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
